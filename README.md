@@ -6,3 +6,5 @@ A collection of Android mini exercises
 - Exercise about styling translatable texts
 ### Take Photos
 - Exercise about taking photos using an external app
+### WebView
+- Exercise about android webviews
