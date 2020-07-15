@@ -25,14 +25,14 @@ public class NotificationListener extends NotificationListenerService {
     public void onNotificationPosted(StatusBarNotification sbn) {
         Log.d(TAG, "Notification posted: " + sbn.toString());
         if (sbn.getPackageName().equals(Constants.YUJ_APP_NOTIFICATION_CREATOR)) {
-            Log.d(TAG, "From custom app, handling posted notification");
+            Log.d(TAG, "From custom app, cancelling notification");
             cancelNotification(sbn.getKey());
-            Intent intent = new Intent(Constants.INTENT_ACTION_NOTIFICATION_POSTED);
-            intent.putExtra(Constants.KEY_EXTRA_NOTIFICATION, sbn);
-            LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
         } else {
-            Log.d(TAG, "From non-custom app, will not handle notif");
+            Log.d(TAG, "From non-custom app, will not cancel notif");
         }
+        Intent intent = new Intent(Constants.INTENT_ACTION_NOTIFICATION_POSTED);
+        intent.putExtra(Constants.KEY_EXTRA_NOTIFICATION, sbn);
+        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
     }
 
     @Override
