@@ -97,8 +97,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (constraintSet) {
             JobInfo jobInfo = builder.build();
-            jobScheduler.schedule(jobInfo);
-            Toast.makeText(this, R.string.job_scheduled, Toast.LENGTH_SHORT).show();
+            int result = jobScheduler.schedule(jobInfo);
+            if (result == JobScheduler.RESULT_SUCCESS) {
+                Toast.makeText(this, R.string.job_scheduled, Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, R.string.failed_to_schedule_job, Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(this, R.string.no_constraint_toast, Toast.LENGTH_SHORT).show();
         }
