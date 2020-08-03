@@ -65,13 +65,20 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
-
         builder.setContentIntent(pendingIntent);
+
+        builder.setDeleteIntent(createDeletePendingIntent());
 
         Notification notification = builder.build();
 
         NotificationManagerCompat nmc = NotificationManagerCompat.from(this);
         nmc.notify(NOTIFICATION_ID, notification);
+    }
+
+    private PendingIntent createDeletePendingIntent() {
+        Intent dismissIntent = new Intent(this, NotificationBroadcastReceiver.class);
+        dismissIntent.setAction(Constants.INTENT_ACTION_NOTIFICATION_DISMISSED);
+        return PendingIntent.getBroadcast(this, Constants.REQUEST_CODE_NOTIFICATION_DISMISSED, dismissIntent, PendingIntent.FLAG_ONE_SHOT);
     }
 
     private void createNotificationChannel() {
