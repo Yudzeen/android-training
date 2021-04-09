@@ -1,8 +1,11 @@
 package com.example.espressoapp;
 
-import androidx.test.espresso.assertion.ViewAssertions;
+import androidx.test.espresso.intent.Intents;
+import androidx.test.espresso.intent.matcher.IntentMatchers;
+import androidx.test.espresso.intent.rule.IntentsTestRule;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.filters.LargeTest;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -13,6 +16,8 @@ import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static androidx.test.espresso.action.ViewActions.typeText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.intent.Intents.*;
+import static androidx.test.espresso.intent.matcher.IntentMatchers.*;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
@@ -40,5 +45,17 @@ public class MainActivityTest {
 
         onView(withId(R.id.textView))
                 .check(matches(withText(STRING_TO_TYPE)));
+    }
+
+    @Test
+    public void navigateToHome() {
+        Intents.init();
+
+        onView(withId(R.id.home_button))
+                .perform(click());
+
+        intended(hasComponent(HomeActivity.class.getName()));
+
+        Intents.release();
     }
 }
