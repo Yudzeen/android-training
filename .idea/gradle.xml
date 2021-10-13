@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/EspressoApp" />
             <option value="$PROJECT_DIR$/ModuleReflection" />
             <option value="$PROJECT_DIR$/ModuleReflection/MyLibrary" />
+            <option value="$PROJECT_DIR$/MutipleLauncherApp" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
