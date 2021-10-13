@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_Training.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_Training.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android_Training.AppLauncher.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android_Training.AppLauncher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AppOverlay/Android_Training.AppOverlay.iml" filepath="$PROJECT_DIR$/.idea/modules/AppOverlay/Android_Training.AppOverlay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/espressoapp/Android_Training.EspressoApp.iml" filepath="$PROJECT_DIR$/.idea/modules/espressoapp/Android_Training.EspressoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modulereflection/Android_Training.ModuleReflection.iml" filepath="$PROJECT_DIR$/.idea/modules/modulereflection/Android_Training.ModuleReflection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modulereflection/MyLibrary/Android_Training.ModuleReflection.MyLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/modulereflection/MyLibrary/Android_Training.ModuleReflection.MyLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MutipleLauncherApp/Android_Training.MutipleLauncherApp.iml" filepath="$PROJECT_DIR$/.idea/modules/MutipleLauncherApp/Android_Training.MutipleLauncherApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NotificationCreator/Android_Training.NotificationCreator.iml" filepath="$PROJECT_DIR$/.idea/modules/NotificationCreator/Android_Training.NotificationCreator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NotificationHistory/Android_Training.NotificationHistory.iml" filepath="$PROJECT_DIR$/.idea/modules/NotificationHistory/Android_Training.NotificationHistory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NotificationScheduler/Android_Training.NotificationScheduler.iml" filepath="$PROJECT_DIR$/.idea/modules/NotificationScheduler/Android_Training.NotificationScheduler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Paging/Android_Training.Paging.iml" filepath="$PROJECT_DIR$/.idea/modules/Paging/Android_Training.Paging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TakePhotos/Android_Training.TakePhotos.iml" filepath="$PROJECT_DIR$/.idea/modules/TakePhotos/Android_Training.TakePhotos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TextSpanTranslate/Android_Training.TextSpanTranslate.iml" filepath="$PROJECT_DIR$/.idea/modules/TextSpanTranslate/Android_Training.TextSpanTranslate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WebView/Android_Training.WebView.iml" filepath="$PROJECT_DIR$/.idea/modules/WebView/Android_Training.WebView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WorkManagerCodelab/Android_Training.WorkManagerCodelab.iml" filepath="$PROJECT_DIR$/.idea/modules/WorkManagerCodelab/Android_Training.WorkManagerCodelab.iml" />
+    </modules>
+  </component>
+</project>
