@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">TextSpanTranslate</string>
-
-    <string name="handsome" translatable="true">handsome</string>
-    <string name="strong" translatable="true">strong</string>
-    <string name="i_am_sentence" translatable="true">I am %s.</string>
-    <string name="i_am_and_sentence" translatable="true">I am %1$s and %2$s.</string>
-</resources>

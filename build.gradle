@@ -1,0 +1,28 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    apply from: "dependencies.gradle"
+    ext {
+        build_versions = [
+                min_sdk : 21,
+                target_sdk : 30,
+                compile_sdk : 30
+        ]
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath app_dependencies.android_gradle
+        classpath app_dependencies.androidx.navigation.safe_args_gradle_plugin
+        classpath app_dependencies.google.dagger.hilt_android_gradle_plugin
+        classpath app_dependencies.jetbrains.kotlin.gradle_plugin
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

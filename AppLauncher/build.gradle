@@ -1,27 +1,33 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-
-buildscript {
-    repositories {
-        google()
-        jcenter()
-        
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.1'
-        
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
 }
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
-        
+apply from: "$rootDir/base-android-module.gradle"
+
+android {
+
+    defaultConfig {
+        applicationId "ebj.habinyasuyujin.androidtraining.applauncher"
+        versionCode 1
+        versionName "1.0"
     }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+dependencies {
+
+    implementation app_dependencies.androidx.app_compat
+    implementation app_dependencies.androidx.core_ktx
+    implementation app_dependencies.androidx.navigation.fragment_ktx
+    implementation app_dependencies.androidx.navigation.ui_ktx
+    implementation app_dependencies.google.material
+
 }

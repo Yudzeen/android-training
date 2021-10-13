@@ -1,0 +1,100 @@
+def versions = [
+        android_gradle : "7.0.2",
+        annotation : "1.2.0",
+        app_compat : "1.3.1",
+        arch_core : "2.1.0",
+        atsl : [
+                junit : "1.1.3",
+                core : "1.3.0",
+                rules : "1.4.0",
+                runner : "1.3.0"
+        ],
+        constraint_layout : "2.1.0",
+        core_ktx : "1.6.0",
+        coroutines : "1.5.0",
+        espresso : "3.4.0",
+        fragment_ktx : "1.3.6",
+        gradle_versions : "0.39.0",
+        hilt : "2.38.1",
+        junit : "4.13.2",
+        kotlin : '1.5.30',
+        lifecycle : '2.3.1',
+        material : "1.4.0",
+        mockito : "2.19.0",
+        navigation : "2.3.5",
+        preferences: "1.1.1",
+        room : "2.3.0",
+        rxandroid: "2.1.1",
+        rxjava2 : "2.1.1",
+        truth : "1.1.3",
+        work : "2.5.0",
+        timber : "5.0.1",
+]
+
+def app_dependencies = [
+        android_gradle : "com.android.tools.build:gradle:$versions.android_gradle",
+        androidx : [
+                annotation: "androidx.annotation:annotation:$versions.annotation",
+                app_compat : "androidx.appcompat:appcompat:$versions.app_compat",
+                arch_core :  [
+                        runtime : "androidx.arch.core:core-runtime:$versions.arch_core",
+                        testing : "androidx.arch.core:core-testing:$versions.arch_core",
+                ],
+                atsl : [
+                        core : "androidx.test:core:$versions.atsl.core",
+                        espresso : "androidx.test.espresso:espresso-core:$versions.espresso",
+                        junit :  "androidx.test.ext:junit:$versions.atsl.junit",
+                        rules : "androidx.test:rules:$versions.atsl.rules",
+                        runner :  "androidx.test:runner:$versions.atsl.runner",
+                ],
+                constraint_layout : "androidx.constraintlayout:constraintlayout:$versions.constraint_layout",
+                core_ktx : "androidx.core:core-ktx:$versions.core_ktx",
+                fragment_ktx : "androidx.fragment:fragment-ktx:$versions.fragment_ktx",
+                lifecycle : [
+                        reactive_streams : "androidx.lifecycle:lifecycle-reactivestreams-ktx:$versions.lifecycle",
+                ],
+                navigation : [
+                        fragment_ktx : "androidx.navigation:navigation-fragment-ktx:$versions.navigation",
+                        safe_args_gradle_plugin : "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.navigation",
+                        testing : "androidx.navigation:navigation-testing:$versions.navigation",
+                        ui_ktx : "androidx.navigation:navigation-ui-ktx:$versions.navigation",
+                ],
+                preferences : "androidx.preference:preference-ktx:$versions.preferences",
+                room : [
+                        compiler : "androidx.room:room-compiler:$versions.room",
+                        ktx : "androidx.room:room-ktx:$versions.room",
+                        runtime : "androidx.room:room-runtime:$versions.room",
+                        rxjava2 : "androidx.room:room-rxjava2:$versions.room",
+                        testing : "androidx.room:room-testing:$versions.room",
+                ],
+                work_runtime_ktx : "androidx.work:work-runtime-ktx:$versions.work",
+        ],
+        google : [
+                dagger : [
+                        hilt_compiler: "com.google.dagger:hilt-compiler:$versions.hilt",
+                        hilt_android: "com.google.dagger:hilt-android:$versions.hilt",
+                        hilt_android_gradle_plugin: "com.google.dagger:hilt-android-gradle-plugin:$versions.hilt",
+                ],
+                material :  "com.google.android.material:material:$versions.material",
+                truth : "com.google.truth:truth:$versions.truth",
+        ],
+        gradle_versions : "com.github.ben-manes:gradle-versions-plugin:$versions.gradle_versions",
+        jetbrains : [
+                kotlin : [
+                        gradle_plugin : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+                        stdlib : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin",
+                        coroutines : [
+                                reactive : "org.jetbrains.kotlinx:kotlinx-coroutines-reactive:$versions.coroutines",
+                                test : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.coroutines",
+                        ],
+                ],
+        ],
+        mockito :  "org.mockito:mockito-core:$versions.mockito",
+        junit : "junit:junit:$versions.junit",
+        rxjava2 : [
+                rxandroid : "io.reactivex.rxjava2:rxandroid:$versions.rxandroid",
+                rxjava : "io.reactivex.rxjava2:rxjava:$versions.rxjava2",
+        ],
+        timber : "com.jakewharton.timber:timber:$versions.timber",
+]
+ext.app_dependencies = app_dependencies
