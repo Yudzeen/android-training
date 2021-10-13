@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/MutipleLauncherApp" />
             <option value="$PROJECT_DIR$/NotificationCreator" />
             <option value="$PROJECT_DIR$/NotificationHistory" />
+            <option value="$PROJECT_DIR$/NotificationScheduler" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
