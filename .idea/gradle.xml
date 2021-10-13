@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/NotificationCreator" />
             <option value="$PROJECT_DIR$/NotificationHistory" />
             <option value="$PROJECT_DIR$/NotificationScheduler" />
+            <option value="$PROJECT_DIR$/Paging" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
