@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Android Training"
 include ':AppLauncher'
+include ':AppOverlay'
