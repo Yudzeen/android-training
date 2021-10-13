@@ -10,3 +10,5 @@ rootProject.name = "Android Training"
 include ':AppLauncher'
 include ':AppOverlay'
 include ':EspressoApp'
+include ':ModuleReflection'
+include ':ModuleReflection:MyLibrary'
