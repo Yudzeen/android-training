@@ -21,6 +21,9 @@
             <option value="$PROJECT_DIR$/NotificationScheduler" />
             <option value="$PROJECT_DIR$/Paging" />
             <option value="$PROJECT_DIR$/TakePhotos" />
+            <option value="$PROJECT_DIR$/TextSpanTranslate" />
+            <option value="$PROJECT_DIR$/WebView" />
+            <option value="$PROJECT_DIR$/WorkManagerCodelab" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
