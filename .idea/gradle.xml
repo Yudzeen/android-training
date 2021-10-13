@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AppLauncher" />
+            <option value="$PROJECT_DIR$/AppOverlay" />
+            <option value="$PROJECT_DIR$/EspressoApp" />
+            <option value="$PROJECT_DIR$/ModuleReflection" />
+            <option value="$PROJECT_DIR$/ModuleReflection/MyLibrary" />
+            <option value="$PROJECT_DIR$/MutipleLauncherApp" />
+            <option value="$PROJECT_DIR$/NotificationCreator" />
+            <option value="$PROJECT_DIR$/NotificationHistory" />
+            <option value="$PROJECT_DIR$/NotificationScheduler" />
+            <option value="$PROJECT_DIR$/Paging" />
+            <option value="$PROJECT_DIR$/TakePhotos" />
+            <option value="$PROJECT_DIR$/TextSpanTranslate" />
+            <option value="$PROJECT_DIR$/WebView" />
+            <option value="$PROJECT_DIR$/WorkManagerCodelab" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

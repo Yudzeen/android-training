@@ -1,0 +1,23 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "Android Training"
+include ':AppLauncher'
+include ':AppOverlay'
+include ':EspressoApp'
+include ':ModuleReflection'
+include ':ModuleReflection:MyLibrary'
+include ':MutipleLauncherApp'
+include ':NotificationCreator'
+include ':NotificationHistory'
+include ':NotificationScheduler'
+include ':Paging'
+include ':TakePhotos'
+include ':TextSpanTranslate'
+include ':WebView'
+include ':WorkManagerCodelab'
