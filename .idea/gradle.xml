@@ -16,6 +16,8 @@
             <option value="$PROJECT_DIR$/ModuleReflection" />
             <option value="$PROJECT_DIR$/ModuleReflection/MyLibrary" />
             <option value="$PROJECT_DIR$/MutipleLauncherApp" />
+            <option value="$PROJECT_DIR$/NotificationCreator" />
+            <option value="$PROJECT_DIR$/NotificationHistory" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
