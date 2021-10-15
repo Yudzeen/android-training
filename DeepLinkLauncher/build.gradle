@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+apply from: "$rootDir/base-android-module.gradle"
+
+android {
+
+    defaultConfig {
+        applicationId "ebj.habinyasuyujin.deeplinklauncher"
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation app_dependencies.androidx.app_compat
+    implementation app_dependencies.androidx.core_ktx
+    implementation app_dependencies.androidx.navigation.fragment_ktx
+    implementation app_dependencies.androidx.navigation.ui_ktx
+    implementation app_dependencies.google.material
+}
