@@ -16,7 +16,7 @@ buildscript {
         classpath app_dependencies.android_gradle
         classpath app_dependencies.androidx.navigation.safe_args_gradle_plugin
         classpath app_dependencies.google.dagger.hilt_android_gradle_plugin
-        classpath app_dependencies.jetbrains.kotlin.gradle_plugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
